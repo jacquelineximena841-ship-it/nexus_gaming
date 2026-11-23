@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - NEXUS Gaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#06060c] text-white min-h-screen flex items-center justify-center p-4">
+    <div class="bg-[#101020] border border-cyan-500/40 p-8 rounded-2xl max-w-md w-full shadow-2xl shadow-cyan-500/10">
+        <h2 class="text-2xl font-bold text-center text-cyan-400 mb-6 uppercase tracking-wider">Crear Cuenta Nexus</h2>
+        <form action="/register" method="POST" class="space-y-4">
+            <div>
+                <label class="block text-sm text-slate-400 mb-1">Nombre Completo</label>
+                <input type="text" name="nombre" required class="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-slate-700 focus:border-cyan-400 outline-none">
+            </div>
+            <div>
+                <label class="block text-sm text-slate-400 mb-1">Correo Electrónico</label>
+                <input type="email" name="correo" required class="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-slate-700 focus:border-cyan-400 outline-none">
+            </div>
+            <div>
+                <label class="block text-sm text-slate-400 mb-1">Contraseña</label>
+                <input type="password" name="password" required class="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-slate-700 focus:border-cyan-400 outline-none">
+            </div>
+            <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 text-black font-bold uppercase tracking-wider hover:opacity-90 transition-all">
+                Registrarse
+            </button>
+        </form>
+        <div class="mt-6 text-center text-sm text-slate-400 space-y-2">
+            <p>¿Ya tienes cuenta? <a href="/login.html" class="text-cyan-400 hover:underline">Inicia sesión aquí</a></p>
+            <p><a href="/" class="text-slate-500 hover:text-white">← Volver a la página principal</a></p>
+        </div>
+    </div>
+</body>
+</html>
