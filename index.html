@@ -91,11 +91,13 @@
                 </span>
             </a>
 
-            <div class="hidden md:flex items-center gap-6 font-orbitron text-xs lg:text-sm font-semibold tracking-wide">
-                <a href="#mision-vision" class="hover:text-cyan-400 transition-colors">MISIÓN</a>
+            <div class="hidden lg:flex items-center gap-5 font-orbitron text-xs font-semibold tracking-wide">
                 <a href="#juegos" class="hover:text-cyan-400 transition-colors">JUEGOS</a>
+                <a href="#rankings" class="hover:text-amber-400 transition-colors">RANKINGS</a>
+                <a href="#noticias" class="hover:text-cyan-400 transition-colors">NOTICIAS</a>
                 <a href="#menu" class="hover:text-cyan-400 transition-colors">MENÚ</a>
-                <a href="#contacto" class="hover:text-cyan-400 transition-colors">CONTACTO</a>
+                <a href="#crea-tu-evento" class="text-cyan-400 hover:text-pink-400 transition-colors">CREA TU EVENTO</a>
+                <a href="#opiniones" class="hover:text-cyan-400 transition-colors">OPINIONES</a>
             </div>
 
             <div id="navAuthArea" class="flex items-center gap-3">
@@ -153,19 +155,19 @@
 
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 text-xs font-orbitron font-bold tracking-wider mb-8 shadow-md shadow-cyan-900/30">
             <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_#00f0ff]"></span>
-            SISTEMA OPERATIVO v2.5 · GAMING & CAFE
+            GAMING · JUEGOS DE MESA · RANKINGS · NOTICIAS · EVENTOS
         </div>
 
         <p class="font-rajdhani text-lg sm:text-2xl text-slate-300 max-w-2xl font-medium mb-8 leading-relaxed">
-            Explora la biblioteca de juegos, disfruta de nuestro menú gastronómico y accede a tu cuenta para coordinar tu experiencia.
+            Guarda tus juegos favoritos con ❤️, consulta sinopsis y clasificaciones, sigue el ranking en vivo y entérate de las últimas noticias gamer.
         </p>
 
         <div class="flex flex-wrap gap-4 justify-center">
-            <button onclick="openAuthModal('login')" class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-black font-orbitron font-extrabold text-sm uppercase tracking-wider transition-all transform hover:-translate-y-1 shadow-lg shadow-cyan-500/25 flex items-center gap-2">
-                <i class="fa-solid fa-user-check"></i> Iniciar Sesión / Registro
-            </button>
+            <a href="#crea-tu-evento" class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-black font-orbitron font-extrabold text-sm uppercase tracking-wider transition-all transform hover:-translate-y-1 shadow-lg shadow-cyan-500/25 flex items-center gap-2">
+                <i class="fa-solid fa-calendar-plus"></i> Crea tu Evento (-20% 1ª vez)
+            </a>
             <a href="#juegos" class="px-8 py-3.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-cyan-400 text-white font-orbitron font-bold text-sm uppercase tracking-wider transition-all transform hover:-translate-y-1">
-                Ver Catálogo de Juegos
+                Explorar Catálogo
             </a>
         </div>
     </header>
@@ -182,168 +184,209 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="p-8 rounded-2xl bg-brand-card/90 border border-purple-900/30 hover:border-cyan-500/50 transition-all group relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-2xl group-hover:bg-cyan-500/10 transition-colors"></div>
-                    <div class="w-14 h-14 rounded-xl bg-cyan-950 border border-cyan-500/40 flex items-center justify-center text-cyan-400 text-2xl mb-6 shadow-md shadow-cyan-500/10">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-950 border border-cyan-500/40 flex items-center justify-center text-cyan-400 text-2xl mb-6">
                         <i class="fa-solid fa-bullseye"></i>
                     </div>
-                    <h3 class="font-orbitron font-bold text-2xl text-white mb-4 flex items-center gap-2">MISIÓN</h3>
+                    <h3 class="font-orbitron font-bold text-2xl text-white mb-4">MISIÓN</h3>
                     <p class="text-slate-300 text-lg leading-relaxed">
-                        Ofrecer un espacio integrador de vanguardia donde los amantes de los videojuegos puedan reunirse a competir, socializar y disfrutar de alimentos gourmet de alta calidad. Garantizamos tecnología de punta, conectividad ultrarrápida y un servicio al cliente excepcional en un ambiente acogedor.
+                        Ofrecer un espacio integrador de vanguardia donde los amantes de los videojuegos y juegos de mesa puedan reunirse a competir, socializar y disfrutar de alimentos y bebidas de alta calidad, con el máximo servicio y atención personalizada.
                     </p>
                 </div>
 
                 <div class="p-8 rounded-2xl bg-brand-card/90 border border-purple-900/30 hover:border-purple-500/50 transition-all group relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full blur-2xl group-hover:bg-purple-500/10 transition-colors"></div>
-                    <div class="w-14 h-14 rounded-xl bg-purple-950 border border-purple-500/40 flex items-center justify-center text-purple-400 text-2xl mb-6 shadow-md shadow-purple-500/10">
+                    <div class="w-14 h-14 rounded-xl bg-purple-950 border border-purple-500/40 flex items-center justify-center text-purple-400 text-2xl mb-6">
                         <i class="fa-solid fa-eye"></i>
                     </div>
-                    <h3 class="font-orbitron font-bold text-2xl text-white mb-4 flex items-center gap-2">VISIÓN</h3>
+                    <h3 class="font-orbitron font-bold text-2xl text-white mb-4">VISIÓN</h3>
                     <p class="text-slate-300 text-lg leading-relaxed">
-                        Consolidarnos para el año 2028 como la cadena líder de Gaming Lounges & Cafes a nivel nacional, siendo el epicentro de torneos e-sports locales, creadores de contenido y comunidades de jugadores que buscan experiencias inolvidables que combinan entretenimiento y gastronomía.
+                        Consolidarnos para el año 2028 como la cadena líder de Gaming Lounges & Cafes a nivel nacional, siendo el epicentro de torneos e-sports locales, reuniones de mesa y comunidades que buscan experiencias inolvidables.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION: CATÁLOGO MASIVO DE JUEGOS MULTIPLATAFORMA -->
+    <!-- SECTION: CATÁLOGO DE JUEGOS INTERACTIVO + FAVORITOS + FICHA TÉCNICA -->
     <section id="juegos" class="py-20 px-4 max-w-7xl mx-auto">
         <div class="text-center mb-10">
-            <span class="text-xs font-orbitron tracking-widest text-cyan-400 font-bold uppercase">DISPONIBLES EN SALA Y CONSOLAS</span>
+            <span class="text-xs font-orbitron tracking-widest text-cyan-400 font-bold uppercase">HAZ CLIC EN UN JUEGO PARA VER SU FICHA · GUARDA TUS FAVORITOS CON ❤️</span>
             <h2 class="font-orbitron font-extrabold text-3xl sm:text-5xl text-white tracking-wider mt-1 mb-3">
-                CATÁLOGO <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500">MULTIPLATAFORMA</span>
+                CATÁLOGO <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500">DE JUEGOS</span>
             </h2>
             <p class="text-slate-400 text-lg max-w-3xl mx-auto">
-                PC Gaming, Laptops de alta gama, Nintendo Switch, Wii, PlayStation 5, Xbox Series X, Celulares y Retro. ¡Selecciona una plataforma o filtro para explorar!
+                Explora por plataforma o género (incluyendo Terror y Juegos de Mesa), toca el corazón para guardar tus favoritos y abre cada título para ver de qué trata y su clasificación.
             </p>
         </div>
 
-        <div class="mb-6 flex flex-wrap justify-center gap-2 font-orbitron text-xs">
+        <!-- Filtro de Plataforma -->
+        <div class="mb-5 flex flex-wrap justify-center gap-2 font-orbitron text-xs">
             <span class="text-slate-400 flex items-center mr-2 text-xs font-bold"><i class="fa-solid fa-gamepad mr-1"></i> PLATAFORMA:</span>
             <button onclick="filterPlatform('all')" class="plat-btn px-3 py-1.5 rounded-lg bg-cyan-500 text-black font-bold transition-all" data-plat="all">TODAS</button>
-            <button onclick="filterPlatform('pc')" class="plat-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-plat="pc"><i class="fa-solid fa-desktop mr-1"></i> PC / Laptop</button>
-            <button onclick="filterPlatform('switch')" class="plat-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-plat="switch"><i class="fa-solid fa-toggle-on mr-1"></i> Nintendo Switch</button>
-            <button onclick="filterPlatform('wii')" class="plat-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-plat="wii"><i class="fa-solid fa-compact-disc mr-1"></i> Wii / Wii U</button>
-            <button onclick="filterPlatform('console')" class="plat-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-plat="console"><i class="fa-brands fa-playstation mr-1"></i> PS5 / Xbox</button>
-            <button onclick="filterPlatform('mobile')" class="plat-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-plat="mobile"><i class="fa-solid fa-mobile-screen mr-1"></i> Celular / Tablet</button>
+            <button onclick="filterPlatform('pc')" class="plat-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-plat="pc">PC / Laptop</button>
+            <button onclick="filterPlatform('switch')" class="plat-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-plat="switch">Nintendo Switch</button>
+            <button onclick="filterPlatform('wii')" class="plat-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-plat="wii">Wii / Wii U</button>
+            <button onclick="filterPlatform('console')" class="plat-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-plat="console">PS5 / Xbox</button>
+            <button onclick="filterPlatform('mobile')" class="plat-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-plat="mobile">Celular / Tablet</button>
+            <button onclick="filterPlatform('board')" class="plat-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-plat="board">Juegos de Mesa</button>
         </div>
 
+        <!-- Filtro de Género y Favoritos -->
         <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 font-orbitron text-xs sm:text-sm">
-            <button onclick="filterGames('all')" class="game-filter-btn px-4 py-2 rounded-xl bg-purple-600 text-white font-bold transition-all" data-cat="all">TODOS LOS GÉNEROS</button>
+            <button onclick="filterGames('all')" class="game-filter-btn px-4 py-2 rounded-xl bg-purple-600 text-white font-bold transition-all" data-cat="all">TODOS</button>
+            <button onclick="filterGames('favorites')" class="game-filter-btn px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-rose-400 font-bold transition-all border border-rose-500/30" data-cat="favorites">
+                <i class="fa-solid fa-heart mr-1"></i> MIS FAVORITOS (<span id="favCountBadge">0</span>)
+            </button>
+            <button onclick="filterGames('terror')" class="game-filter-btn px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-cat="terror"><i class="fa-solid fa-ghost mr-1"></i> TERROR</button>
+            <button onclick="filterGames('mesa')" class="game-filter-btn px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-cat="mesa"><i class="fa-solid fa-chess-knight mr-1"></i> JUEGOS DE MESA</button>
             <button onclick="filterGames('br')" class="game-filter-btn px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-cat="br">BATTLE ROYALE</button>
             <button onclick="filterGames('fps')" class="game-filter-btn px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-cat="fps">SHOOTERS / FPS</button>
             <button onclick="filterGames('sandbox')" class="game-filter-btn px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-cat="sandbox">SANDBOX & AVENTURA</button>
             <button onclick="filterGames('sports')" class="game-filter-btn px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-cat="sports">DEPORTES & CARRERAS</button>
-            <button onclick="filterGames('fight')" class="game-filter-btn px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-cat="fight">PELEAS / FIGHTING</button>
-            <button onclick="filterGames('moba')" class="game-filter-btn px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-cat="moba">MOBA & ESTRATEGIA</button>
+            <button onclick="filterGames('fight')" class="game-filter-btn px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-cat="fight">PELEAS & PARTY</button>
         </div>
 
-        <div id="games-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            <div class="game-card group cursor-pointer bg-brand-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-400 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between" data-category="br" data-platform="pc console mobile" onclick="openAimTrainer('Fortnite')">
-                <div class="relative h-44 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1589241062272-c0a000072dfa?w=500&auto=format&fit=crop&q=80" onerror="renderSvgFallback(this, 'FORTNITE', '#00f0ff')" alt="Fortnite" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                    <span class="absolute top-2 left-2 bg-cyan-950/90 text-cyan-400 text-[9px] font-orbitron font-bold px-2 py-0.5 rounded border border-cyan-500/30">PC/PS5/SWITCH</span>
-                </div>
-                <div class="p-3">
-                    <h3 class="font-orbitron font-bold text-sm text-white group-hover:text-cyan-400 transition-colors">Fortnite</h3>
-                    <p class="text-slate-400 text-[11px] mt-0.5">Battle Royale · 240 FPS</p>
-                </div>
-            </div>
-
-            <div class="game-card group cursor-pointer bg-brand-card rounded-2xl overflow-hidden border border-slate-800 hover:border-green-400 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between" data-category="sandbox" data-platform="pc switch console mobile" onclick="openAimTrainer('Minecraft')">
-                <div class="relative h-44 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1627856013091-fed6e4e30025?w=500&auto=format&fit=crop&q=80" onerror="renderSvgFallback(this, 'MINECRAFT', '#10b981')" alt="Minecraft" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                    <span class="absolute top-2 left-2 bg-green-950/90 text-green-400 text-[9px] font-orbitron font-bold px-2 py-0.5 rounded border border-green-500/30">TODAS LAS CONSOLAS</span>
-                </div>
-                <div class="p-3">
-                    <h3 class="font-orbitron font-bold text-sm text-white group-hover:text-green-400 transition-colors">Minecraft</h3>
-                    <p class="text-slate-400 text-[11px] mt-0.5">Sandbox · Servidores PVP</p>
-                </div>
-            </div>
-
-            <div class="game-card group cursor-pointer bg-brand-card rounded-2xl overflow-hidden border border-slate-800 hover:border-pink-400 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between" data-category="fps" data-platform="pc console" onclick="openAimTrainer('Valorant')">
-                <div class="relative h-44 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&auto=format&fit=crop&q=80" onerror="renderSvgFallback(this, 'VALORANT', '#ff007f')" alt="Valorant" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                    <span class="absolute top-2 left-2 bg-pink-950/90 text-pink-400 text-[9px] font-orbitron font-bold px-2 py-0.5 rounded border border-pink-500/30">PC / CONSOLAS</span>
-                </div>
-                <div class="p-3">
-                    <h3 class="font-orbitron font-bold text-sm text-white group-hover:text-pink-400 transition-colors">Valorant</h3>
-                    <p class="text-slate-400 text-[11px] mt-0.5">Tactical Shooter 5v5</p>
-                </div>
-            </div>
-
-            <div class="game-card group cursor-pointer bg-brand-card rounded-2xl overflow-hidden border border-slate-800 hover:border-yellow-400 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between" data-category="sports" data-platform="pc console switch" onclick="openAimTrainer('EA FC 24')">
-                <div class="relative h-44 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=500&auto=format&fit=crop&q=80" onerror="renderSvgFallback(this, 'EA FC 24', '#ffb700')" alt="EA FC 24" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                    <span class="absolute top-2 left-2 bg-yellow-950/90 text-yellow-400 text-[9px] font-orbitron font-bold px-2 py-0.5 rounded border border-yellow-500/30">PS5 / XBOX / SWITCH</span>
-                </div>
-                <div class="p-3">
-                    <h3 class="font-orbitron font-bold text-sm text-white group-hover:text-yellow-400 transition-colors">EA FC 24 / FIFA</h3>
-                    <p class="text-slate-400 text-[11px] mt-0.5">Fútbol Competitivo 1v1</p>
-                </div>
-            </div>
-
-            <div class="game-card group cursor-pointer bg-brand-card rounded-2xl overflow-hidden border border-slate-800 hover:border-red-400 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between" data-category="sports" data-platform="switch" onclick="openAimTrainer('Mario Kart 8')">
-                <div class="relative h-44 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=500&auto=format&fit=crop&q=80" onerror="renderSvgFallback(this, 'MARIO KART 8', '#ef4444')" alt="Mario Kart 8" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                    <span class="absolute top-2 left-2 bg-red-950/90 text-red-400 text-[9px] font-orbitron font-bold px-2 py-0.5 rounded border border-red-500/30">NINTENDO SWITCH</span>
-                </div>
-                <div class="p-3">
-                    <h3 class="font-orbitron font-bold text-sm text-white group-hover:text-red-400 transition-colors">Mario Kart 8 Deluxe</h3>
-                    <p class="text-slate-400 text-[11px] mt-0.5">Carreras 4 Jugadores</p>
-                </div>
-            </div>
-
-            <div class="game-card group cursor-pointer bg-brand-card rounded-2xl overflow-hidden border border-slate-800 hover:border-purple-400 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between" data-category="fight" data-platform="switch" onclick="openAimTrainer('Smash Ultimate')">
-                <div class="relative h-44 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&auto=format&fit=crop&q=80" onerror="renderSvgFallback(this, 'SMASH BROS', '#a855f7')" alt="Smash Bros" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                    <span class="absolute top-2 left-2 bg-purple-950/90 text-purple-400 text-[9px] font-orbitron font-bold px-2 py-0.5 rounded border border-purple-500/30">NINTENDO SWITCH</span>
-                </div>
-                <div class="p-3">
-                    <h3 class="font-orbitron font-bold text-sm text-white group-hover:text-purple-400 transition-colors">Smash Bros Ultimate</h3>
-                    <p class="text-slate-400 text-[11px] mt-0.5">Lucha Multijugador</p>
-                </div>
-            </div>
+        <!-- Cuadrícula dinámica de juegos -->
+        <div id="games-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"></div>
+        <div id="emptyFavoritesMsg" class="hidden text-center py-10 bg-brand-card/60 rounded-2xl border border-slate-800 mt-4">
+            <i class="fa-regular fa-heart text-3xl text-rose-400 mb-2"></i>
+            <p class="font-orbitron text-sm text-slate-300">Aún no has guardado juegos en favoritos. ¡Toca el corazón ❤️ en cualquier juego para guardarlo!</p>
         </div>
     </section>
 
-    <!-- SECTION: MENÚ GASTRONÓMICO COMPLETO -->
+    <!-- SECTION: RANKINGS DE JUEGOS -->
+    <section id="rankings" class="py-20 px-4 bg-slate-950/75 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-xs font-orbitron tracking-widest text-amber-400 uppercase font-bold">TOP NEXUS LOUNGE EN TIEMPO REAL</span>
+                <h2 class="font-orbitron font-extrabold text-3xl sm:text-5xl text-white tracking-wider mt-1 mb-3">
+                    RANKING DE <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-pink-500 to-cyan-400">JUEGOS</span>
+                </h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                    Descubre los más jugados en sala esta semana, los mejor calificados y los favoritos guardados por nuestros usuarios.
+                </p>
+            </div>
+
+            <!-- Pestañas de Ranking -->
+            <div class="flex flex-wrap justify-center gap-3 mb-8 font-orbitron text-xs sm:text-sm">
+                <button onclick="switchRankingTab('popular')" id="rankTabPopular" class="px-5 py-2.5 rounded-xl bg-amber-500 text-black font-extrabold transition-all shadow-md shadow-amber-500/20">
+                    <i class="fa-solid fa-fire mr-1.5"></i> MÁS POPULARES AHORA
+                </button>
+                <button onclick="switchRankingTab('rated')" id="rankTabRated" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all">
+                    <i class="fa-solid fa-star mr-1.5 text-yellow-400"></i> MEJOR CALIFICADOS
+                </button>
+                <button onclick="switchRankingTab('community')" id="rankTabCommunity" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all">
+                    <i class="fa-solid fa-heart mr-1.5 text-rose-400"></i> FAVORITOS DE USUARIOS
+                </button>
+            </div>
+
+            <!-- Lista Top 5 -->
+            <div id="rankingList" class="space-y-3"></div>
+        </div>
+    </section>
+
+    <!-- SECTION: NOTICIAS GAMER (ACTUALIZABLES CADA 2-5 DÍAS + VENTANA MODAL) -->
+    <section id="noticias" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+            <div>
+                <span class="text-xs font-orbitron tracking-widest text-cyan-400 uppercase font-bold flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    BOLETÍN NEXUS · ROTACIÓN AUTOMÁTICA CADA 3 DÍAS
+                </span>
+                <h2 class="font-orbitron font-extrabold text-3xl sm:text-5xl text-white tracking-wider mt-1">
+                    NOTICIAS <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">GAMER</span>
+                </h2>
+            </div>
+            <div class="flex items-center gap-3">
+                <span id="newsCycleLabel" class="text-xs font-orbitron px-3 py-1.5 rounded-lg bg-slate-900 border border-cyan-500/30 text-cyan-300">
+                    Edición Actual
+                </span>
+                <button onclick="rotateNewsCycle()" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-purple-500/40 text-purple-300 font-orbitron text-xs font-bold transition-all">
+                    <i class="fa-solid fa-rotate mr-1"></i> Ver Siguiente Edición
+                </button>
+            </div>
+        </div>
+
+        <div id="newsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+    </section>
+
+    <!-- SECTION: MENÚ GASTRONÓMICO, COMBOS Y BEBIDAS -->
     <section id="menu" class="py-20 px-4 bg-slate-950/80 border-t border-slate-800">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-10">
                 <span class="text-xs font-orbitron tracking-widest text-cyan-400 uppercase font-bold">POWER UP YOUR ENERGY</span>
                 <h2 class="font-orbitron font-extrabold text-3xl sm:text-5xl text-white tracking-wider mt-1 mb-3">
-                    MENÚ GASTRONÓMICO <span class="text-pink-500">& SNACKS</span>
+                    MENÚ, COMBOS <span class="text-pink-500">& BEBIDAS</span>
                 </h2>
-                <p class="text-slate-400 text-lg">Alimentos gourmet y pócimas energéticas preparadas al momento para tus partidas de larga duración.</p>
+                <p class="text-slate-400 text-lg">Combos para compartir, comidas recién preparadas, snacks y variedad de bebidas frías y energéticas.</p>
             </div>
 
             <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12 font-orbitron text-xs sm:text-sm">
                 <button onclick="filterMenu('all')" class="menu-filter-btn px-5 py-2.5 rounded-xl bg-pink-600 text-white font-bold transition-all shadow-md shadow-pink-600/20" data-menu="all">
                     <i class="fa-solid fa-utensils mr-1.5"></i> TODO EL MENÚ
                 </button>
+                <button onclick="filterMenu('combos')" class="menu-filter-btn px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-menu="combos">
+                    <i class="fa-solid fa-fire mr-1.5"></i> COMBOS GAMER
+                </button>
                 <button onclick="filterMenu('comidas')" class="menu-filter-btn px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-menu="comidas">
-                    <i class="fa-solid fa-burger mr-1.5"></i> PLATOS FUERTES
+                    <i class="fa-solid fa-burger mr-1.5"></i> COMIDAS
                 </button>
                 <button onclick="filterMenu('snacks')" class="menu-filter-btn px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-menu="snacks">
-                    <i class="fa-solid fa-box-open mr-1.5"></i> SNACKS Y ENTRADAS
+                    <i class="fa-solid fa-box-open mr-1.5"></i> SNACKS
                 </button>
                 <button onclick="filterMenu('bebidas')" class="menu-filter-btn px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all" data-menu="bebidas">
-                    <i class="fa-solid fa-flask mr-1.5"></i> BEBIDAS Y POCIONES
+                    <i class="fa-solid fa-glass-water mr-1.5"></i> BEBIDAS Y POCIONES
                 </button>
             </div>
 
             <div id="food-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- COMBOS -->
+                <div class="food-item bg-brand-card rounded-2xl overflow-hidden border border-cyan-500/40 hover:border-cyan-400 transition-all duration-300 flex flex-col justify-between" data-mcat="combos">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&auto=format&fit=crop&q=80" onerror="handleImgError(this)" alt="Combo Duo LAN" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-cyan-500 text-black font-orbitron font-black text-[10px] px-2.5 py-1 rounded-md">COMBO 2 PERSONAS</span>
+                            <span class="absolute top-3 right-3 bg-black/80 backdrop-blur-md text-cyan-400 font-orbitron font-extrabold text-sm px-3 py-1 rounded-lg border border-cyan-500/30">$280.00</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-orbitron font-bold text-xl text-white mb-2">Combo Duo LAN</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">2 Hamburguesas Nexus XL + 1 orden grande de papas gajo + 2 bebidas a elegir.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-item bg-brand-card rounded-2xl overflow-hidden border border-purple-500/40 hover:border-purple-400 transition-all duration-300 flex flex-col justify-between" data-mcat="combos">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop&q=80" onerror="handleImgError(this)" alt="Combo Squad 4 Jugadores" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-purple-500 text-white font-orbitron font-black text-[10px] px-2.5 py-1 rounded-md">COMBO SQUAD (4)</span>
+                            <span class="absolute top-3 right-3 bg-black/80 backdrop-blur-md text-purple-400 font-orbitron font-extrabold text-sm px-3 py-1 rounded-lg border border-purple-500/30">$520.00</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-orbitron font-bold text-xl text-white mb-2">Combo Squad 4 Jugadores</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">1 Pizza Cyberpunk Suprema + 20 Boneless Respawn + Nachos con queso + 4 bebidas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-item bg-brand-card rounded-2xl overflow-hidden border border-pink-500/40 hover:border-pink-400 transition-all duration-300 flex flex-col justify-between" data-mcat="combos">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&auto=format&fit=crop&q=80" onerror="handleImgError(this)" alt="Combo Torneo VIP" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-pink-500 text-white font-orbitron font-black text-[10px] px-2.5 py-1 rounded-md">COMBO EVENTO / GRUPO</span>
+                            <span class="absolute top-3 right-3 bg-black/80 backdrop-blur-md text-pink-400 font-orbitron font-extrabold text-sm px-3 py-1 rounded-lg border border-pink-500/30">$950.00</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-orbitron font-bold text-xl text-white mb-2">Combo Torneo VIP (8-10 Pers.)</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">2 Pizzas Grandes + 40 Boneless mixtos + 2 Charolas de Papas + 10 bebidas a elegir.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COMIDAS Y SNACKS -->
                 <div class="food-item bg-brand-card rounded-2xl overflow-hidden border border-slate-800/80 hover:border-pink-500/50 transition-all duration-300 flex flex-col justify-between" data-mcat="comidas">
                     <div>
                         <div class="h-48 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=80" onerror="handleImgError(this)" alt="Burger Pixel XL" class="w-full h-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=80" onerror="handleImgError(this)" alt="Hamburguesa Nexus XL" class="w-full h-full object-cover">
                             <span class="absolute top-3 right-3 bg-black/80 backdrop-blur-md text-pink-400 font-orbitron font-extrabold text-sm px-3 py-1 rounded-lg border border-pink-500/30">$120.00</span>
                         </div>
                         <div class="p-6">
@@ -366,17 +409,300 @@
                     </div>
                 </div>
 
-                <div class="food-item bg-brand-card rounded-2xl overflow-hidden border border-slate-800/80 hover:border-purple-500/50 transition-all duration-300 flex flex-col justify-between" data-mcat="bebidas">
+                <!-- VARIEDAD DE BEBIDAS -->
+                <div class="food-item bg-brand-card rounded-2xl overflow-hidden border border-purple-500/40 hover:border-purple-400 transition-all duration-300 flex flex-col justify-between" data-mcat="bebidas">
                     <div>
                         <div class="h-48 overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=80" onerror="handleImgError(this)" alt="Bebida Gamer" class="w-full h-full object-cover">
                             <span class="absolute top-3 right-3 bg-black/80 backdrop-blur-md text-purple-400 font-orbitron font-extrabold text-sm px-3 py-1 rounded-lg border border-purple-500/30">$70.00</span>
                         </div>
                         <div class="p-6">
-                            <h3 class="font-orbitron font-bold text-xl text-white mb-2">Potion Bar - Bebida Gamer</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed">Bebida de infusión azul o roja con electrólitos, toque de frutas tropicales y hielo fosforescente.</p>
+                            <h3 class="font-orbitron font-bold text-xl text-white mb-2">Potion Bar - Poción Mana / Vida</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Bebida refrescante azul o roja con electrólitos, toque cítrico-tropical y hielo fosforescente.</p>
                         </div>
                     </div>
+                </div>
+
+                <div class="food-item bg-brand-card rounded-2xl overflow-hidden border border-cyan-500/40 hover:border-cyan-400 transition-all duration-300 flex flex-col justify-between" data-mcat="bebidas">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500&auto=format&fit=crop&q=80" onerror="handleImgError(this)" alt="Malteada Pixel Berry" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-black/80 backdrop-blur-md text-cyan-400 font-orbitron font-extrabold text-sm px-3 py-1 rounded-lg border border-cyan-500/30">$85.00</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-orbitron font-bold text-xl text-white mb-2">Malteada Pixel Berry / Oreo</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Cremosa malteada fría preparada al momento con crema batida, galleta triturada y chispas dulces.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-item bg-brand-card rounded-2xl overflow-hidden border border-emerald-500/40 hover:border-emerald-400 transition-all duration-300 flex flex-col justify-between" data-mcat="bebidas">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=80" onerror="handleImgError(this)" alt="Limonada Menta" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-black/80 backdrop-blur-md text-emerald-400 font-orbitron font-extrabold text-sm px-3 py-1 rounded-lg border border-emerald-500/30">$65.00</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-orbitron font-bold text-xl text-white mb-2">Limonada Freeze Menta & Pepino</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Súper fría y natural con limón recién exprimido, hojas de menta fresca y hielo frappé.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-item bg-brand-card rounded-2xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all duration-300 flex flex-col justify-between" data-mcat="bebidas">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500&auto=format&fit=crop&q=80" onerror="handleImgError(this)" alt="Frappe Neon Mocha" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-black/80 backdrop-blur-md text-amber-400 font-orbitron font-extrabold text-sm px-3 py-1 rounded-lg border border-amber-500/30">$80.00</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-orbitron font-bold text-xl text-white mb-2">Frappé Neon Mocha / Caramelo</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Café helado con chocolate o caramelo y toque de energía para maratones de partidas o estudio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: CREA TU EVENTO (CON 20% DESCUENTO PRIMERA VEZ) -->
+    <section id="crea-tu-evento" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-10">
+            <span class="text-xs font-orbitron tracking-widest text-purple-400 uppercase font-bold">20% DE DESCUENTO EN TU PRIMER EVENTO</span>
+            <h2 class="font-orbitron font-extrabold text-3xl sm:text-5xl text-white tracking-wider mt-1 mb-3">
+                CREA TU <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">EVENTO</span>
+            </h2>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                Indica cuántas sillas y mesas necesitas, qué combo te gustaría tener y los videojuegos o juegos de mesa para tu reunión.
+            </p>
+        </div>
+
+        <div class="bg-brand-card border-2 border-cyan-500/40 rounded-3xl p-6 sm:p-10 shadow-2xl shadow-cyan-500/10">
+            <form id="customEventForm" onsubmit="submitCustomEvent(event)" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-xs font-orbitron text-cyan-400 font-bold uppercase block mb-1.5">
+                                <i class="fa-solid fa-user mr-1"></i> Nombre del Organizador
+                            </label>
+                            <input type="text" id="evOrganizer" placeholder="Tu nombre o equipo" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-cyan-400 outline-none">
+                        </div>
+                        <div>
+                            <label class="text-xs font-orbitron text-cyan-400 font-bold uppercase block mb-1.5">
+                                <i class="fa-solid fa-trophy mr-1"></i> Tipo de Evento
+                            </label>
+                            <select id="evType" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-cyan-400 outline-none">
+                                <option value="Cumpleaños Gamer">Cumpleaños Gamer</option>
+                                <option value="Torneo Privado / E-Sports">Torneo Privado / E-Sports</option>
+                                <option value="Noche de Juegos de Mesa y Amigos">Noche de Juegos de Mesa y Amigos</option>
+                                <option value="Noche de Terror / Maratón">Noche de Terror / Maratón</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div>
+                            <label class="text-xs font-orbitron text-slate-300 font-bold uppercase block mb-1.5">
+                                <i class="fa-solid fa-calendar mr-1 text-purple-400"></i> Fecha
+                            </label>
+                            <input type="date" id="evDate" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-cyan-400 outline-none">
+                        </div>
+                        <div>
+                            <label class="text-xs font-orbitron text-slate-300 font-bold uppercase block mb-1.5">
+                                <i class="fa-solid fa-chair mr-1 text-cyan-400"></i> ¿Cuántas Sillas?
+                            </label>
+                            <input type="number" id="evChairs" min="2" max="60" value="10" oninput="updateEventEstimate()" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm font-bold focus:border-cyan-400 outline-none">
+                        </div>
+                        <div>
+                            <label class="text-xs font-orbitron text-slate-300 font-bold uppercase block mb-1.5">
+                                <i class="fa-solid fa-table mr-1 text-pink-400"></i> ¿Cuántas Mesas?
+                            </label>
+                            <input type="number" id="evTables" min="1" max="20" value="2" oninput="updateEventEstimate()" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm font-bold focus:border-cyan-400 outline-none">
+                        </div>
+                    </div>
+
+                    <!-- Descuento primera vez -->
+                    <div class="p-4 rounded-2xl bg-emerald-950/35 border border-emerald-500/40">
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="checkbox" id="evFirstTime" checked onchange="updateEventEstimate()" class="w-4 h-4 accent-emerald-400">
+                            <span class="text-xs sm:text-sm font-orbitron font-bold text-emerald-300">
+                                ¿Es tu primera vez creando un evento? Aplica <span class="text-white underline">20% de descuento</span> automático.
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Selección de Combo -->
+                    <div>
+                        <label class="text-xs font-orbitron text-pink-400 font-bold uppercase block mb-1.5">
+                            <i class="fa-solid fa-burger mr-1"></i> ¿Qué Combo te gustaría tener?
+                        </label>
+                        <select id="evCombo" onchange="updateEventEstimate()" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-pink-400 outline-none">
+                            <option value="Combo Torneo VIP ($950)" data-price="950">Combo Torneo VIP (8-10 pers. · 2 Pizzas + 40 Boneless + Papas + 10 Bebidas) — $950</option>
+                            <option value="Combo Squad 4 Jugadores ($520)" data-price="520">Combo Squad 4 Jugadores (1 Pizza + 20 Boneless + Nachos + 4 Bebidas) — $520</option>
+                            <option value="Combo Duo LAN ($280)" data-price="280">Combo Duo LAN (2 Hamburguesas Nexus XL + Papas + 2 Bebidas) — $280</option>
+                            <option value="Bebidas y Snacks en el Local ($0 base)" data-price="0">Elegir bebidas y platillos directos en el local</option>
+                        </select>
+                    </div>
+
+                    <!-- Selección de Juegos -->
+                    <div>
+                        <label class="text-xs font-orbitron text-cyan-400 font-bold uppercase block mb-2">
+                            <i class="fa-solid fa-gamepad mr-1"></i> Videojuegos y Juegos de Mesa para tu Evento
+                        </label>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-xs font-orbitron">
+                            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-amber-400 cursor-pointer">
+                                <input type="checkbox" name="evGames" value="Ajedrez" onchange="updateEventEstimate()" checked class="accent-amber-400">
+                                <span>Ajedrez</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-amber-400 cursor-pointer">
+                                <input type="checkbox" name="evGames" value="Damas Chinas" onchange="updateEventEstimate()" checked class="accent-amber-400">
+                                <span>Damas Chinas</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-amber-400 cursor-pointer">
+                                <input type="checkbox" name="evGames" value="UNO y Cartas" onchange="updateEventEstimate()" class="accent-amber-400">
+                                <span>UNO y Cartas</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-400 cursor-pointer">
+                                <input type="checkbox" name="evGames" value="Fortnite" onchange="updateEventEstimate()" checked class="accent-cyan-400">
+                                <span>Fortnite</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-400 cursor-pointer">
+                                <input type="checkbox" name="evGames" value="Mario Kart 8" onchange="updateEventEstimate()" class="accent-cyan-400">
+                                <span>Mario Kart 8</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-400 cursor-pointer">
+                                <input type="checkbox" name="evGames" value="Smash Bros" onchange="updateEventEstimate()" class="accent-cyan-400">
+                                <span>Smash Bros</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-rose-400 cursor-pointer">
+                                <input type="checkbox" name="evGames" value="Resident Evil 4 / Terror" onchange="updateEventEstimate()" class="accent-rose-400">
+                                <span>Resident Evil / Terror</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-400 cursor-pointer">
+                                <input type="checkbox" name="evGames" value="Valorant / CS2" onchange="updateEventEstimate()" class="accent-cyan-400">
+                                <span>Valorant / CS2</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-400 cursor-pointer">
+                                <input type="checkbox" name="evGames" value="EA FC 25 / FIFA" onchange="updateEventEstimate()" class="accent-cyan-400">
+                                <span>EA FC 25 / FIFA</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-xs font-orbitron text-slate-300 font-bold uppercase block mb-1.5">
+                            Detalles adicionales (bebidas extra, tableros, consolas, horario)
+                        </label>
+                        <textarea id="evNotes" rows="2" placeholder="Ej. Incluir 4 frappés mocha, 2 tableros de ajedrez y damas chinas..." class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-cyan-400 outline-none"></textarea>
+                    </div>
+                </div>
+
+                <!-- Resumen en Vivo -->
+                <div class="bg-slate-950/90 border border-purple-500/40 rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+                            <span class="font-orbitron font-bold text-sm text-cyan-400">RESUMEN DE TU EVENTO</span>
+                            <i class="fa-solid fa-wand-magic-sparkles text-purple-400"></i>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="flex justify-between">
+                                <span class="text-slate-400">Sillas solicitadas:</span>
+                                <span id="sumChairs" class="font-orbitron font-bold text-white">10 sillas</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-slate-400">Mesas solicitadas:</span>
+                                <span id="sumTables" class="font-orbitron font-bold text-white">2 mesas</span>
+                            </li>
+                            <li>
+                                <span class="text-slate-400 block mb-1">Combo seleccionado:</span>
+                                <span id="sumCombo" class="font-bold text-pink-400 text-xs">Combo Torneo VIP ($950)</span>
+                            </li>
+                            <li>
+                                <span class="text-slate-400 block mb-1">Juegos incluidos:</span>
+                                <span id="sumGames" class="font-bold text-cyan-300 text-xs">Ajedrez, Damas Chinas, Fortnite</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-6 pt-4 border-t border-slate-800 space-y-1.5">
+                            <div class="flex justify-between text-xs font-orbitron text-slate-400">
+                                <span>SUBTOTAL:</span>
+                                <span id="sumSubtotal">$1,250 MXN</span>
+                            </div>
+                            <div id="discountRow" class="flex justify-between text-xs font-orbitron text-emerald-400">
+                                <span>DESCUENTO 1ª VEZ (-20%):</span>
+                                <span id="sumDiscount">-$250 MXN</span>
+                            </div>
+                            <div class="pt-1">
+                                <span class="text-xs font-orbitron text-slate-400 block">TOTAL ESTIMADO</span>
+                                <span id="sumEstimate" class="font-orbitron font-black text-3xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">$1,000 MXN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-black font-orbitron font-extrabold text-xs uppercase tracking-wider transition-all shadow-lg shadow-cyan-500/20">
+                            <i class="fa-solid fa-paper-plane mr-1"></i> Solicitar Mi Evento
+                        </button>
+                        <div id="eventSuccessMsg" class="hidden mt-3 p-3 rounded-xl bg-emerald-950/90 border border-emerald-500/50 text-emerald-300 text-xs font-orbitron text-center"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION: OPINIONES DE USUARIOS -->
+    <section id="opiniones" class="py-20 px-4 bg-slate-950/70 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-xs font-orbitron tracking-widest text-cyan-400 uppercase font-bold">COMUNIDAD NEXUS</span>
+                <h2 class="font-orbitron font-extrabold text-3xl sm:text-4xl text-white tracking-wider mt-1 mb-2">
+                    LO QUE DICEN <span class="text-purple-400">NUESTROS VISITANTES</span>
+                </h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                    Jugadores, grupos de amigos y organizadores que ya vivieron la experiencia en el lounge.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl bg-brand-card border border-slate-800 hover:border-cyan-400/50 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="font-orbitron font-bold text-sm text-white">Valeria Mendoza</span>
+                            <span class="text-amber-400 text-xs">★★★★★</span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            "Nos dieron el máximo servicio desde que llegamos. Pedimos mesas para jugar ajedrez y damas chinas, trajeron las bebidas súper rápido y todo el equipo estuvo súper atento."
+                        </p>
+                    </div>
+                    <span class="text-[11px] font-orbitron text-cyan-400 mt-4 block">REUNIÓN DE MESA & CAFÉ</span>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-brand-card border border-slate-800 hover:border-purple-400/50 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="font-orbitron font-bold text-sm text-white">Diego Santamaría</span>
+                            <span class="text-amber-400 text-xs">★★★★★</span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            "Armamos nuestro primer evento aquí y nos encantó la atención y el descuento. Las consolas y PCs van de maravilla y los combos llegan calientitos sin tener que salir de la partida."
+                        </p>
+                    </div>
+                    <span class="text-[11px] font-orbitron text-purple-400 mt-4 block">TORNEO CON AMIGOS</span>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-brand-card border border-slate-800 hover:border-pink-400/50 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="font-orbitron font-bold text-sm text-white">Camila Herrera</span>
+                            <span class="text-amber-400 text-xs">★★★★★</span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            "El ambiente es increíble y el trato es de primera: siempre pendientes de que no nos falte nada, con buenas bebidas, combos completos y espacio listo para grupos grandes."
+                        </p>
+                    </div>
+                    <span class="text-[11px] font-orbitron text-pink-400 mt-4 block">CUMPLEAÑOS PRIVADO</span>
                 </div>
             </div>
         </div>
@@ -397,7 +723,7 @@
                     </span>
                 </a>
                 <p class="text-slate-400 text-sm leading-relaxed">
-                    El centro interactivo concebido para la comunidad e-sports y amantes de los videojuegos. Ven a jugar, comer y competir.
+                    El centro interactivo concebido para la comunidad e-sports, juegos de mesa y amantes del buen servicio.
                 </p>
             </div>
 
@@ -417,4 +743,1012 @@
                 <h3 class="font-orbitron font-bold text-lg text-white tracking-wider text-purple-400 mb-4">SÍGUENOS EN REDES</h3>
                 <div class="flex flex-col gap-3">
                     <a href="https://www.tiktok.com/@nexus_gaming_lounge_cafe?lang=es-419" target="_blank" class="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition-all text-white">
-                        <i class="fa-brands fa-tiktok text-cyan-400 text
+                        <i class="fa-brands fa-tiktok text-cyan-400 text-lg"></i>
+                        <span class="text-xs font-orbitron font-bold">@nexus_gaming_lounge_cafe</span>
+                    </a>
+                    <a href="https://www.instagram.com/nexus_gaming_lounge_y_cafe/" target="_blank" class="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-pink-500 transition-all text-white">
+                        <i class="fa-brands fa-instagram text-pink-400 text-lg"></i>
+                        <span class="text-xs font-orbitron font-bold">@nexus_gaming_lounge_y_cafe</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL: DETALLE DEL JUEGO (SINOPSIS, CLASIFICACIÓN, GÉNERO, FAVORITO) -->
+    <div id="gameDetailModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 hidden">
+        <div class="bg-brand-card border border-cyan-500/40 rounded-3xl overflow-hidden max-w-2xl w-full relative shadow-2xl shadow-cyan-500/20">
+            <button onclick="closeGameDetailModal()" aria-label="Cerrar ficha" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black/80 border border-slate-700 text-slate-300 hover:text-white flex items-center justify-center font-bold text-lg transition-all">✕</button>
+
+            <div class="relative h-56 sm:h-64 overflow-hidden">
+                <img id="gdImage" src="" alt="" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-card/40 to-transparent"></div>
+                <div class="absolute bottom-4 left-6 right-6 flex flex-wrap items-end justify-between gap-2">
+                    <div>
+                        <span id="gdGenreBadge" class="text-[10px] font-orbitron font-bold uppercase px-2.5 py-1 rounded bg-purple-600 text-white"></span>
+                        <h3 id="gdTitle" class="font-orbitron font-black text-2xl sm:text-3xl text-white mt-2"></h3>
+                    </div>
+                    <span id="gdRatingBadge" class="px-3 py-1 rounded-xl bg-black/80 border border-amber-400/50 text-amber-400 font-orbitron font-bold text-xs"></span>
+                </div>
+            </div>
+
+            <div class="p-6 space-y-4">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs font-orbitron">
+                    <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+                        <span class="text-slate-400 block text-[10px]">CLASIFICACIÓN</span>
+                        <span id="gdClassification" class="text-cyan-400 font-bold"></span>
+                    </div>
+                    <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+                        <span class="text-slate-400 block text-[10px]">PLATAFORMAS</span>
+                        <span id="gdPlatforms" class="text-white font-bold"></span>
+                    </div>
+                    <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 col-span-2 sm:col-span-1">
+                        <span class="text-slate-400 block text-[10px]">MODO EN SALA</span>
+                        <span id="gdPlayers" class="text-purple-300 font-bold"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="text-xs font-orbitron text-slate-400 uppercase font-bold block mb-1">¿De qué trata?</span>
+                    <p id="gdDescription" class="text-slate-300 text-base leading-relaxed"></p>
+                </div>
+
+                <div class="flex flex-wrap gap-3 pt-2">
+                    <button id="gdFavBtn" onclick="" class="px-5 py-3 rounded-xl border border-rose-500/50 bg-rose-950/30 hover:bg-rose-950/60 text-rose-300 font-orbitron font-bold text-xs uppercase transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-heart"></i> Guardar en Favoritos
+                    </button>
+                    <button id="gdAimBtn" onclick="" class="px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 text-black font-orbitron font-extrabold text-xs uppercase transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-crosshairs"></i> Probar Puntería
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: NOTICIA GAMER COMPLETA -->
+    <div id="newsDetailModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 hidden">
+        <div class="bg-brand-card border border-purple-500/40 rounded-3xl overflow-hidden max-w-2xl w-full relative shadow-2xl shadow-purple-500/20">
+            <button onclick="closeNewsModal()" aria-label="Cerrar noticia" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black/80 border border-slate-700 text-slate-300 hover:text-white flex items-center justify-center font-bold text-lg transition-all">✕</button>
+
+            <div class="relative h-56 sm:h-64 overflow-hidden">
+                <img id="ndImage" src="" alt="" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-card/30 to-transparent"></div>
+                <div class="absolute bottom-4 left-6 right-6">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span id="ndCategory" class="text-[10px] font-orbitron font-bold uppercase px-2.5 py-1 rounded bg-cyan-500 text-black"></span>
+                        <span id="ndDate" class="text-xs font-orbitron text-slate-300 bg-black/70 px-2.5 py-0.5 rounded"></span>
+                    </div>
+                    <h3 id="ndTitle" class="font-orbitron font-black text-xl sm:text-2xl text-white"></h3>
+                </div>
+            </div>
+
+            <div class="p-6 space-y-4">
+                <p id="ndBody" class="text-slate-300 text-base leading-relaxed"></p>
+                <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 flex items-center justify-between gap-3">
+                    <div>
+                        <span class="text-xs font-orbitron text-cyan-400 font-bold block">DISPONIBLE EN NEXUS LOUNGE</span>
+                        <span class="text-xs text-slate-400">Pregunta en barra por las salas o torneos relacionados con esta noticia.</span>
+                    </div>
+                    <button onclick="closeNewsModal()" class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-orbitron font-bold text-xs uppercase">
+                        Entendido
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE INICIO DE SESIÓN Y REGISTRO EN LA MISMA PÁGINA -->
+    <div id="authModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 hidden">
+        <div class="bg-brand-card border border-cyan-500/40 rounded-3xl p-6 sm:p-7 max-w-md w-full relative shadow-2xl shadow-cyan-500/20">
+            <button onclick="closeAuthModal()" aria-label="Cerrar ventana" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center font-bold text-lg transition-all">✕</button>
+
+            <div class="text-center mb-5">
+                <span class="text-[10px] font-orbitron tracking-widest text-cyan-400 uppercase font-bold">NEXUS ACCOUNT</span>
+                <h3 id="modalAuthTitle" class="font-orbitron font-black text-2xl text-white mt-1">Iniciar Sesión</h3>
+            </div>
+
+            <div class="flex border-b border-slate-800 mb-5 font-orbitron text-xs">
+                <button type="button" id="modalTabLogin" onclick="switchModalAuthTab('login')" class="w-1/2 py-2.5 font-bold text-cyan-400 border-b-2 border-cyan-400 transition-all">
+                    INICIAR SESIÓN
+                </button>
+                <button type="button" id="modalTabRegister" onclick="switchModalAuthTab('register')" class="w-1/2 py-2.5 font-bold text-slate-400 transition-all">
+                    REGISTRARSE
+                </button>
+            </div>
+
+            <div id="modalAuthAlert" class="hidden mb-4 p-3 rounded-xl text-xs font-orbitron border flex items-start gap-2"></div>
+
+            <form id="modalLoginForm" onsubmit="submitModalLogin(event)" class="space-y-4">
+                <div>
+                    <label class="text-xs font-orbitron text-slate-300 block mb-1">Correo Electrónico</label>
+                    <input type="email" id="modalLoginEmail" placeholder="tu@correo.com" required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-cyan-400 outline-none">
+                </div>
+                <div>
+                    <label class="text-xs font-orbitron text-slate-300 block mb-1">Contraseña</label>
+                    <input type="password" id="modalLoginPassword" placeholder="••••••••" required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-cyan-400 outline-none">
+                </div>
+                <button type="submit" id="btnSubmitModalLogin" class="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 text-black font-orbitron font-extrabold text-xs uppercase tracking-wider hover:opacity-90 transition-all shadow-lg shadow-cyan-500/20">
+                    Entrar a mi Cuenta
+                </button>
+            </form>
+
+            <form id="modalRegisterForm" onsubmit="submitModalRegister(event)" class="space-y-3.5 hidden">
+                <div>
+                    <label class="text-xs font-orbitron text-slate-300 block mb-1">Nombre Completo</label>
+                    <input type="text" id="modalRegName" placeholder="Tu nombre" required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-purple-400 outline-none">
+                </div>
+                <div>
+                    <label class="text-xs font-orbitron text-slate-300 block mb-1">Correo Electrónico</label>
+                    <input type="email" id="modalRegEmail" placeholder="tu@correo.com" required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-purple-400 outline-none">
+                </div>
+                <div>
+                    <label class="text-xs font-orbitron text-slate-300 block mb-1">Contraseña</label>
+                    <input type="password" id="modalRegPassword" placeholder="Mínimo 6 caracteres" minlength="6" required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-purple-400 outline-none">
+                </div>
+                <div>
+                    <label class="text-xs font-orbitron text-slate-300 block mb-1">Confirmar Contraseña</label>
+                    <input type="password" id="modalRegConfirm" placeholder="Repite tu contraseña" minlength="6" required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-purple-400 outline-none">
+                </div>
+                <button type="submit" id="btnSubmitModalRegister" class="w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-400 text-black font-orbitron font-extrabold text-xs uppercase tracking-wider hover:opacity-90 transition-all shadow-lg shadow-purple-500/20">
+                    Crear Cuenta
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- AIM TRAINER MODAL -->
+    <div id="aimModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 hidden">
+        <div class="bg-brand-card border border-cyan-500/40 rounded-3xl p-6 max-w-xl w-full text-center relative shadow-2xl shadow-cyan-500/20">
+            <button onclick="closeAimTrainer()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center font-bold text-lg">✕</button>
+            <span id="modalGameTitle" class="text-xs font-orbitron tracking-widest text-cyan-400 font-bold uppercase">AIM TRAINER CHALLENGE</span>
+            <h3 class="font-orbitron font-black text-2xl text-white mt-1 mb-2">PRUEBA DE PUNTERÍA</h3>
+
+            <div class="flex justify-between items-center bg-slate-950 px-6 py-3 rounded-xl border border-slate-800 font-orbitron mb-4 text-sm">
+                <div><span class="text-slate-400 text-xs block">PUNTOS</span><span id="aimScore" class="text-cyan-400 font-bold text-xl">0</span></div>
+                <div><span class="text-slate-400 text-xs block">TIEMPO</span><span id="aimTimer" class="text-pink-400 font-bold text-xl">15s</span></div>
+                <div><span class="text-slate-400 text-xs block">PRECISIÓN</span><span id="aimAccuracy" class="text-purple-400 font-bold text-xl">100%</span></div>
+            </div>
+
+            <div class="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-800">
+                <canvas id="aimCanvas" class="w-full h-full block"></canvas>
+                <div id="aimStartOverlay" class="absolute inset-0 bg-black/80 flex flex-col items-center justify-center gap-3">
+                    <i class="fa-solid fa-crosshairs text-cyan-400 text-4xl animate-bounce"></i>
+                    <button onclick="startAimGame()" class="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 text-black font-orbitron font-bold text-sm uppercase">Iniciar Prueba</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = (window.location.hostname === 'localhost' || window.location.hostname.includes('ngrok'))
+            ? ''
+            : 'https://unhelpful-drainable-glowworm.ngrok-free.dev';
+
+        const authHeaders = {
+            'Content-Type': 'application/json',
+            'ngrok-skip-browser-warning': 'true'
+        };
+
+        // ==========================================
+        // BASE DE DATOS DE JUEGOS (CON FICHA, CLASIFICACIÓN, GÉNERO Y RANKING)
+        // ==========================================
+        const GAMES_DATA = [
+            {
+                id: 'fortnite',
+                title: 'Fortnite',
+                subtitle: 'Battle Royale · 240 FPS',
+                badge: 'PC/PS5/SWITCH',
+                genreLabel: 'Battle Royale / Acción',
+                categories: ['br'],
+                platforms: ['pc', 'console', 'mobile'],
+                platformsText: 'PC, PS5, Xbox, Switch, Móvil',
+                classification: 'T (+13 Adolescentes)',
+                players: '1 a 4 Jugadores (Squad)',
+                rating: 4.9,
+                popularityScore: 98,
+                communityLikes: 342,
+                color: '#00f0ff',
+                image: 'https://images.unsplash.com/photo-1589241062272-c0a000072dfa?w=600&auto=format&fit=crop&q=80',
+                description: 'Salta a la isla junto a hasta 100 jugadores en partidas rápidas de construcción, cero construcción, modos creativos y torneos en escuadra.'
+            },
+            {
+                id: 'resident-evil-4',
+                title: 'Resident Evil 4 Remake',
+                subtitle: 'Terror & Supervivencia',
+                badge: 'TERROR / PS5 / PC',
+                genreLabel: 'Terror / Survival Horror',
+                categories: ['terror', 'fps'],
+                platforms: ['pc', 'console'],
+                platformsText: 'PC Gaming, PS5, Xbox Series X',
+                classification: 'M (+17 Maduros)',
+                players: '1 Jugador (Historia)',
+                rating: 4.9,
+                popularityScore: 92,
+                communityLikes: 289,
+                color: '#ef4444',
+                image: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=600&auto=format&fit=crop&q=80',
+                description: 'Leon S. Kennedy se adentra en una aldea aislada en Europa para rescatar a la hija del presidente en una atmósfera intensa de terror, acción y gestión de recursos.'
+            },
+            {
+                id: 'fnaf-security',
+                title: 'Five Nights at Freddy’s',
+                subtitle: 'Terror Psicológico · Sustos',
+                badge: 'TERROR / TODAS',
+                genreLabel: 'Terror / Suspenso',
+                categories: ['terror'],
+                platforms: ['pc', 'switch', 'console', 'mobile'],
+                platformsText: 'PC, Switch, PS5, Móvil',
+                classification: 'T (+13 Adolescentes)',
+                players: '1 Jugador (Ideal en Grupo)',
+                rating: 4.7,
+                popularityScore: 89,
+                communityLikes: 310,
+                color: '#a855f7',
+                image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&auto=format&fit=crop&q=80',
+                description: 'Sobrevive al turno nocturno vigilando cámaras de seguridad, controlando energía y evitando que los animatrónicos entren a tu oficina antes de las 6:00 AM.'
+            },
+            {
+                id: 'mario-kart-8',
+                title: 'Mario Kart 8 Deluxe',
+                subtitle: 'Carreras 4 Jugadores',
+                badge: 'NINTENDO SWITCH',
+                genreLabel: 'Carreras / Fiesta',
+                categories: ['sports', 'fight'],
+                platforms: ['switch'],
+                platformsText: 'Nintendo Switch',
+                classification: 'E (Para Todos)',
+                players: '1 a 4 Jugadores Local',
+                rating: 4.9,
+                popularityScore: 96,
+                communityLikes: 378,
+                color: '#ef4444',
+                image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=600&auto=format&fit=crop&q=80',
+                description: 'Compite en 96 pistas llenas de turbos, caparazones y atajos con tus personajes favoritos de Nintendo en pantalla dividida para hasta 4 amigos.'
+            },
+            {
+                id: 'valorant',
+                title: 'Valorant',
+                subtitle: 'Tactical Shooter 5v5',
+                badge: 'PC / CONSOLAS',
+                genreLabel: 'Shooter Táctico / FPS',
+                categories: ['fps'],
+                platforms: ['pc', 'console'],
+                platformsText: 'PC 240Hz, PS5, Xbox Series X',
+                classification: 'T (+13 Adolescentes)',
+                players: '5v5 Competitivo',
+                rating: 4.8,
+                popularityScore: 95,
+                communityLikes: 295,
+                color: '#ff007f',
+                image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&auto=format&fit=crop&q=80',
+                description: 'Combina puntería precisa con habilidades únicas de cada agente en partidas tácticas de ataque y defensa a 13 rondas.'
+            },
+            {
+                id: 'minecraft',
+                title: 'Minecraft',
+                subtitle: 'Sandbox · Servidores PVP',
+                badge: 'TODAS LAS CONSOLAS',
+                genreLabel: 'Sandbox / Creatividad',
+                categories: ['sandbox'],
+                platforms: ['pc', 'switch', 'console', 'mobile'],
+                platformsText: 'PC, Switch, PS5, Xbox, Móvil',
+                classification: 'E10+ (+10 Años)',
+                players: '1 a 10 Jugadores en Red',
+                rating: 4.8,
+                popularityScore: 94,
+                communityLikes: 360,
+                color: '#10b981',
+                image: 'https://images.unsplash.com/photo-1627856013091-fed6e4e30025?w=600&auto=format&fit=crop&q=80',
+                description: 'Construye mundos sin límites, explora cuevas, sobrevive a la noche o reta a tus amigos en minijuegos de BedWars y SkyWars.'
+            },
+            {
+                id: 'smash-ultimate',
+                title: 'Smash Bros Ultimate',
+                subtitle: 'Lucha Multijugador',
+                badge: 'NINTENDO SWITCH',
+                genreLabel: 'Peleas / Crossover',
+                categories: ['fight'],
+                platforms: ['switch'],
+                platformsText: 'Nintendo Switch',
+                classification: 'E10+ (+10 Años)',
+                players: '2 a 8 Jugadores Local',
+                rating: 4.9,
+                popularityScore: 93,
+                communityLikes: 325,
+                color: '#a855f7',
+                image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&auto=format&fit=crop&q=80',
+                description: 'Más de 80 luchadores icónicos se enfrentan en escenarios dinámicos donde el objetivo es sacar a tus rivales fuera de la arena.'
+            },
+            {
+                id: 'ea-fc-25',
+                title: 'EA FC 25 / FIFA',
+                subtitle: 'Fútbol Competitivo 1v1',
+                badge: 'PS5 / XBOX / SWITCH',
+                genreLabel: 'Deportes / Fútbol',
+                categories: ['sports'],
+                platforms: ['pc', 'console', 'switch'],
+                platformsText: 'PS5, Xbox Series X, PC, Switch',
+                classification: 'E (Para Todos)',
+                players: '1 a 4 Jugadores',
+                rating: 4.7,
+                popularityScore: 91,
+                communityLikes: 274,
+                color: '#ffb700',
+                image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600&auto=format&fit=crop&q=80',
+                description: 'Disfruta partidos rápidos, modo Rush 5v5 y torneos entre amigos con las ligas y clubes más importantes del mundo.'
+            },
+            {
+                id: 'ajedrez',
+                title: 'Ajedrez Clásico',
+                subtitle: 'Estrategia 1v1 · Tablero',
+                badge: 'JUEGO DE MESA',
+                genreLabel: 'Juego de Mesa / Estrategia',
+                categories: ['mesa'],
+                platforms: ['board'],
+                platformsText: 'Tablero Físico en Mesa',
+                classification: 'E (Para Todas las Edades)',
+                players: '2 Jugadores',
+                rating: 4.9,
+                popularityScore: 87,
+                communityLikes: 240,
+                color: '#fbbf24',
+                image: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=600&auto=format&fit=crop&q=80',
+                description: 'El clásico duelo de táctica y concentración. Solicita tu tablero y reloj en barra mientras disfrutas de un café o bebida fría.'
+            },
+            {
+                id: 'damas-chinas',
+                title: 'Damas Chinas',
+                subtitle: '2 a 6 Jugadores · Estrella',
+                badge: 'JUEGO DE MESA',
+                genreLabel: 'Juego de Mesa / Familiar',
+                categories: ['mesa'],
+                platforms: ['board'],
+                platformsText: 'Tablero Físico en Mesa',
+                classification: 'E (Para Todas las Edades)',
+                players: '2 a 6 Jugadores',
+                rating: 4.8,
+                popularityScore: 84,
+                communityLikes: 215,
+                color: '#f59e0b',
+                image: 'https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=600&auto=format&fit=crop&q=80',
+                description: 'Cruza tus canicas hasta la punta opuesta del tablero de estrella encadenando saltos estratégicos en partidas grupales súper entretenidas.'
+            },
+            {
+                id: 'jenga-torre',
+                title: 'Torre de Destreza (Jenga)',
+                subtitle: 'Grupal · Retos en Mesa',
+                badge: 'JUEGO DE MESA',
+                genreLabel: 'Juego de Mesa / Habilidad',
+                categories: ['mesa'],
+                platforms: ['board'],
+                platformsText: 'Bloques de Madera en Mesa',
+                classification: 'E (Para Todas las Edades)',
+                players: '2 a 10 Jugadores',
+                rating: 4.7,
+                popularityScore: 85,
+                communityLikes: 228,
+                color: '#fbbf24',
+                image: 'https://images.unsplash.com/photo-1632501641765-e568d28b0015?w=600&auto=format&fit=crop&q=80',
+                description: 'Retira bloques pieza por pieza con pulso firme y colócalos arriba sin que se derrumbe la torre. Ideal para romper el hielo en reuniones.'
+            },
+            {
+                id: 'wii-sports',
+                title: 'Wii Sports Resort',
+                subtitle: 'Boliche, Espadas & Tenis',
+                badge: 'NINTENDO WII',
+                genreLabel: 'Deportes / Movimiento',
+                categories: ['sports', 'fight'],
+                platforms: ['wii'],
+                platformsText: 'Nintendo Wii',
+                classification: 'E (Para Todos)',
+                players: '1 a 4 Jugadores',
+                rating: 4.8,
+                popularityScore: 88,
+                communityLikes: 264,
+                color: '#67e8f9',
+                image: 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&auto=format&fit=crop&q=80',
+                description: 'Usa los controles de movimiento para jugar boliche, duelos de espada, tiro con arco y ping pong en la isla Wuhu.'
+            }
+        ];
+
+        // ==========================================
+        // NOTICIAS GAMER (ROTACIÓN AUTOMÁTICA CADA 3 DÍAS + VENTANA MODAL)
+        // ==========================================
+        const NEWS_EDITIONS = [
+            {
+                editionName: 'Edición Actual · Ciclo 1 (Renovación cada 3 días)',
+                items: [
+                    {
+                        id: 'n1',
+                        category: 'TORNEOS NEXUS',
+                        date: 'Actualizado hace 1 día',
+                        title: 'Gran Torneo Relámpago de Mario Kart 8 y Smash Bros este Fin de Semana',
+                        summary: 'Inscripciones abiertas en barra para parejas y jugadores individuales con premios en horas de juego y combos gratis.',
+                        image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=700&auto=format&fit=crop&q=80',
+                        body: 'Este sábado a partir de las 5:00 PM celebraremos nuestro torneo relámpago en las estaciones Nintendo Switch de NEXUS Gaming Lounge. Habrá fase de grupos en Mario Kart 8 Deluxe (150cc) y eliminatoria directa en Super Smash Bros Ultimate. Los tres primeros lugares ganarán pases de horas ilimitadas y Combos Squad para compartir con sus amigos.'
+                    },
+                    {
+                        id: 'n2',
+                        category: 'TERROR & ESTRENOS',
+                        date: 'Actualizado hace 2 días',
+                        title: 'Noches de Terror en Pantalla Gigante: Maratón Resident Evil & FNAF',
+                        summary: 'Apagamos las luces principales los jueves por la noche para sesiones especiales de juegos de terror con audio envolvente.',
+                        image: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=700&auto=format&fit=crop&q=80',
+                        body: 'Si te gustan los sustos y la adrenalina, ya puedes reservar tu estación o mesa grupal para las Noches de Terror en NEXUS. Contamos con Resident Evil 4 Remake, Five Nights at Freddy’s y retos cooperativos para ver quién aguanta más sin saltar de la silla.'
+                    },
+                    {
+                        id: 'n3',
+                        category: 'ZONA MESA & CAFÉ',
+                        date: 'Actualizado hoy',
+                        title: 'Nuevos Tableros de Ajedrez y Damas Chinas Disponibles sin Costo Extra',
+                        summary: 'Ampliamos nuestra colección de juegos de mesa para acompañar tus frappés, malteadas y snacks en cualquier mesa del café.',
+                        image: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=700&auto=format&fit=crop&q=80',
+                        body: 'Ahora al consumir cualquier bebida o combo en nuestra área de cafetería puedes solicitar sin costo adicional tableros de Ajedrez, Damas Chinas, Torre Jenga y mazos de cartas UNO para pasar la tarde con tu grupo.'
+                    }
+                ]
+            },
+            {
+                editionName: 'Edición Especial · Ciclo 2 (Renovación cada 3 días)',
+                items: [
+                    {
+                        id: 'n4',
+                        category: 'E-SPORTS & PC',
+                        date: 'Edición Rotativa #2',
+                        title: 'Actualización de Monitores 240Hz en Zona Competitiva de Valorant y Fortnite',
+                        summary: 'Nuevos periféricos mecánicos y ajuste de baja latencia listos para tus partidas clasificatorias en equipo.',
+                        image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=700&auto=format&fit=crop&q=80',
+                        body: 'Renovamos nuestras estaciones principales de PC Gaming con calibración de 240Hz, teclados mecánicos silenciosos y conexión de fibra dedicada para que tus partidas de Valorant, Fortnite y Counter-Strike 2 corran con máxima fluidez.'
+                    },
+                    {
+                        id: 'n5',
+                        category: 'PROMOCIÓN EVENTOS',
+                        date: 'Edición Rotativa #2',
+                        title: 'Sigue Activo el 20% de Descuento en tu Primer Evento Privado',
+                        summary: 'Reserva mesas, sillas, combos y tus juegos favoritos desde la sección Crea tu Evento y obtén rebaja inmediata.',
+                        image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=700&auto=format&fit=crop&q=80',
+                        body: '¿Planeas un cumpleaños o reunión escolar? Usa nuestro configurador en línea para elegir exactamente cuántas sillas y mesas necesitas, qué combo de comida prefieres y qué videojuegos o juegos de mesa quieres listos al llegar.'
+                    },
+                    {
+                        id: 'n6',
+                        category: 'COMUNIDAD & RANKING',
+                        date: 'Edición Rotativa #2',
+                        title: 'Vota por tus Juegos Favoritos con el Botón ❤️ y Sube su Puesto en el Ranking',
+                        summary: 'Los títulos más guardados por los usuarios recibirán torneos temáticos el próximo mes.',
+                        image: 'https://images.unsplash.com/photo-1589241062272-c0a000072dfa?w=700&auto=format&fit=crop&q=80',
+                        body: 'Tu voto cuenta: al marcar tus juegos favoritos con el corazón en el catálogo, ayudas a definir qué títulos tendrán eventos especiales, ligas semanales y premios en NEXUS Gaming Lounge.'
+                    }
+                ]
+            }
+        ];
+
+        // ==========================================
+        // ESTADO DE FAVORITOS, RANKING Y NOTICIAS
+        // ==========================================
+        let userFavorites = JSON.parse(localStorage.getItem('nexus_fav_games') || '[]');
+        let currentCat = 'all';
+        let currentPlat = 'all';
+        let currentRankingTab = 'popular';
+        // Calcula automáticamente el ciclo cada 3 días (entre 2 y 5 días)
+        let currentNewsEditionIndex = Math.floor(Date.now() / (3 * 24 * 60 * 60 * 1000)) % NEWS_EDITIONS.length;
+
+        function saveFavorites() {
+            localStorage.setItem('nexus_fav_games', JSON.stringify(userFavorites));
+            const badge = document.getElementById('favCountBadge');
+            if (badge) badge.innerText = userFavorites.length;
+        }
+
+        function toggleFavoriteGame(gameId, event) {
+            if (event) event.stopPropagation();
+            const idx = userFavorites.indexOf(gameId);
+            if (idx === -1) {
+                userFavorites.push(gameId);
+            } else {
+                userFavorites.splice(idx, 1);
+            }
+            saveFavorites();
+            renderGamesCatalog();
+            renderRankingList();
+        }
+
+        function renderGamesCatalog() {
+            const grid = document.getElementById('games-grid');
+            const emptyMsg = document.getElementById('emptyFavoritesMsg');
+            if (!grid) return;
+
+            const filtered = GAMES_DATA.filter(game => {
+                const isFav = userFavorites.includes(game.id);
+                const matchesCat = currentCat === 'all'
+                    || (currentCat === 'favorites' && isFav)
+                    || game.categories.includes(currentCat);
+                const matchesPlat = currentPlat === 'all' || game.platforms.includes(currentPlat);
+                return matchesCat && matchesPlat;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '';
+                emptyMsg.classList.remove('hidden');
+                return;
+            }
+
+            emptyMsg.classList.add('hidden');
+            grid.innerHTML = filtered.map(game => {
+                const isFav = userFavorites.includes(game.id);
+                return `
+                    <div onclick="openGameDetailModal('${game.id}')" class="game-card group cursor-pointer bg-brand-card rounded-2xl overflow-hidden border ${isFav ? 'border-rose-500/60' : 'border-slate-800'} hover:border-cyan-400 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between relative">
+                        <div class="relative h-44 overflow-hidden">
+                            <img src="${game.image}" onerror="renderSvgFallback(this, '${game.title.toUpperCase()}', '${game.color}')" alt="${game.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+                            <span class="absolute top-2 left-2 bg-black/80 text-cyan-300 text-[9px] font-orbitron font-bold px-2 py-0.5 rounded border border-cyan-500/30">${game.badge}</span>
+                            <button type="button" onclick="toggleFavoriteGame('${game.id}', event)" title="${isFav ? 'Quitar de favoritos' : 'Guardar en favoritos'}" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-black/80 border ${isFav ? 'border-rose-500 text-rose-500' : 'border-slate-700 text-slate-300 hover:text-rose-400'} flex items-center justify-center transition-transform active:scale-125">
+                                <i class="${isFav ? 'fa-solid' : 'fa-regular'} fa-heart text-xs"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <div class="flex items-center justify-between gap-1">
+                                <h3 class="font-orbitron font-bold text-sm text-white group-hover:text-cyan-400 transition-colors truncate">${game.title}</h3>
+                                <span class="text-[10px] font-orbitron text-amber-400 shrink-0">★ ${game.rating}</span>
+                            </div>
+                            <p class="text-slate-400 text-[11px] mt-0.5 truncate">${game.subtitle}</p>
+                            <span class="inline-block mt-2 text-[10px] font-orbitron text-purple-300 group-hover:text-cyan-300">Ver ficha →</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function filterGames(cat) {
+            currentCat = cat;
+            document.querySelectorAll('.game-filter-btn').forEach(b => {
+                const active = b.getAttribute('data-cat') === cat;
+                b.className = active
+                    ? 'game-filter-btn px-4 py-2 rounded-xl bg-purple-600 text-white font-bold transition-all'
+                    : 'game-filter-btn px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all';
+            });
+            renderGamesCatalog();
+        }
+
+        function filterPlatform(plat) {
+            currentPlat = plat;
+            document.querySelectorAll('.plat-btn').forEach(b => {
+                const active = b.getAttribute('data-plat') === plat;
+                b.className = active
+                    ? 'plat-btn px-3 py-1.5 rounded-lg bg-cyan-500 text-black font-bold transition-all'
+                    : 'plat-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all';
+            });
+            renderGamesCatalog();
+        }
+
+        // Modal de detalle del juego
+        function openGameDetailModal(gameId) {
+            const game = GAMES_DATA.find(g => g.id === gameId);
+            if (!game) return;
+
+            const isFav = userFavorites.includes(game.id);
+            document.getElementById('gdImage').src = game.image;
+            document.getElementById('gdGenreBadge').innerText = game.genreLabel;
+            document.getElementById('gdTitle').innerText = game.title;
+            document.getElementById('gdRatingBadge').innerText = `★ ${game.rating} / 5.0`;
+            document.getElementById('gdClassification').innerText = game.classification;
+            document.getElementById('gdPlatforms').innerText = game.platformsText;
+            document.getElementById('gdPlayers').innerText = game.players;
+            document.getElementById('gdDescription').innerText = game.description;
+
+            const favBtn = document.getElementById('gdFavBtn');
+            favBtn.innerHTML = isFav
+                ? '<i class="fa-solid fa-heart text-rose-500"></i> Guardado en Favoritos'
+                : '<i class="fa-regular fa-heart"></i> Guardar en Favoritos';
+            favBtn.onclick = () => {
+                toggleFavoriteGame(game.id);
+                openGameDetailModal(game.id);
+            };
+
+            const aimBtn = document.getElementById('gdAimBtn');
+            aimBtn.onclick = () => {
+                closeGameDetailModal();
+                openAimTrainer(game.title);
+            };
+
+            document.getElementById('gameDetailModal').classList.remove('hidden');
+        }
+
+        function closeGameDetailModal() {
+            document.getElementById('gameDetailModal').classList.add('hidden');
+        }
+
+        // ==========================================
+        // RANKINGS DE JUEGOS
+        // ==========================================
+        function switchRankingTab(tab) {
+            currentRankingTab = tab;
+            const activeClass = 'px-5 py-2.5 rounded-xl bg-amber-500 text-black font-extrabold transition-all shadow-md shadow-amber-500/20';
+            const inactiveClass = 'px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all';
+
+            document.getElementById('rankTabPopular').className = tab === 'popular' ? activeClass : inactiveClass;
+            document.getElementById('rankTabRated').className = tab === 'rated' ? activeClass : inactiveClass;
+            document.getElementById('rankTabCommunity').className = tab === 'community' ? activeClass : inactiveClass;
+
+            renderRankingList();
+        }
+
+        function renderRankingList() {
+            const container = document.getElementById('rankingList');
+            if (!container) return;
+
+            const sorted = [...GAMES_DATA].sort((a, b) => {
+                if (currentRankingTab === 'rated') return b.rating - a.rating || b.popularityScore - a.popularityScore;
+                if (currentRankingTab === 'community') {
+                    const aTotal = a.communityLikes + (userFavorites.includes(a.id) ? 1 : 0);
+                    const bTotal = b.communityLikes + (userFavorites.includes(b.id) ? 1 : 0);
+                    return bTotal - aTotal;
+                }
+                return b.popularityScore - a.popularityScore;
+            }).slice(0, 5);
+
+            container.innerHTML = sorted.map((game, index) => {
+                const isFav = userFavorites.includes(game.id);
+                const totalLikes = game.communityLikes + (isFav ? 1 : 0);
+                let metricLabel = `${game.popularityScore}% actividad en sala`;
+                if (currentRankingTab === 'rated') metricLabel = `★ ${game.rating} calificación`;
+                if (currentRankingTab === 'community') metricLabel = `❤️ ${totalLikes} favoritos`;
+
+                return `
+                    <div onclick="openGameDetailModal('${game.id}')" class="cursor-pointer p-4 rounded-2xl bg-brand-card border border-slate-800 hover:border-amber-400/50 transition-all flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4 min-w-0">
+                            <span class="w-9 h-9 rounded-xl ${index === 0 ? 'bg-amber-400 text-black' : 'bg-slate-900 text-cyan-400 border border-slate-700'} font-orbitron font-black text-sm flex items-center justify-center shrink-0">
+                                #${index + 1}
+                            </span>
+                            <img src="${game.image}" alt="${game.title}" class="w-12 h-12 rounded-xl object-cover shrink-0">
+                            <div class="min-w-0">
+                                <h4 class="font-orbitron font-bold text-sm sm:text-base text-white truncate">${game.title}</h4>
+                                <span class="text-xs text-slate-400 block truncate">${game.genreLabel} · ${game.classification}</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 shrink-0">
+                            <span class="text-xs font-orbitron font-bold text-amber-300 bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800">
+                                ${metricLabel}
+                            </span>
+                            <button type="button" onclick="toggleFavoriteGame('${game.id}', event)" class="w-9 h-9 rounded-xl bg-slate-950 border ${isFav ? 'border-rose-500 text-rose-500' : 'border-slate-800 text-slate-400 hover:text-rose-400'} flex items-center justify-center">
+                                <i class="${isFav ? 'fa-solid' : 'fa-regular'} fa-heart text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // ==========================================
+        // NOTICIAS GAMER (ROTACIÓN CADA 3 DÍAS + MODAL)
+        // ==========================================
+        function renderNewsSection() {
+            const grid = document.getElementById('newsGrid');
+            const label = document.getElementById('newsCycleLabel');
+            if (!grid) return;
+
+            const edition = NEWS_EDITIONS[currentNewsEditionIndex];
+            if (label) label.innerText = edition.editionName;
+
+            grid.innerHTML = edition.items.map(item => `
+                <article onclick="openNewsModal('${item.id}')" class="cursor-pointer group bg-brand-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-400 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-cyan-500 text-black font-orbitron font-black text-[10px] px-2.5 py-1 rounded-md">${item.category}</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-[11px] font-orbitron text-purple-400 block mb-1">${item.date}</span>
+                            <h3 class="font-orbitron font-bold text-lg text-white group-hover:text-cyan-400 transition-colors mb-2">${item.title}</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">${item.summary}</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-5">
+                        <span class="text-xs font-orbitron font-bold text-cyan-400 group-hover:underline">Leer noticia completa →</span>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        function rotateNewsCycle() {
+            currentNewsEditionIndex = (currentNewsEditionIndex + 1) % NEWS_EDITIONS.length;
+            renderNewsSection();
+        }
+
+        function openNewsModal(newsId) {
+            const allItems = NEWS_EDITIONS.flatMap(ed => ed.items);
+            const news = allItems.find(n => n.id === newsId);
+            if (!news) return;
+
+            document.getElementById('ndImage').src = news.image;
+            document.getElementById('ndCategory').innerText = news.category;
+            document.getElementById('ndDate').innerText = news.date;
+            document.getElementById('ndTitle').innerText = news.title;
+            document.getElementById('ndBody').innerText = news.body;
+            document.getElementById('newsDetailModal').classList.remove('hidden');
+        }
+
+        function closeNewsModal() {
+            document.getElementById('newsDetailModal').classList.add('hidden');
+        }
+
+        // ==========================================
+        // AUTENTICACIÓN MODAL (CONECTADA AL BACKEND)
+        // ==========================================
+        function showModalAuthAlert(message, isError = true) {
+            const alertBox = document.getElementById('modalAuthAlert');
+            alertBox.classList.remove('hidden', 'bg-red-950/80', 'border-red-500/50', 'text-red-300', 'bg-emerald-950/80', 'border-emerald-500/50', 'text-emerald-300');
+            if (isError) {
+                alertBox.classList.add('bg-red-950/80', 'border-red-500/50', 'text-red-300');
+                alertBox.innerHTML = `<i class="fa-solid fa-triangle-exclamation mt-0.5 shrink-0"></i><span>${message}</span>`;
+            } else {
+                alertBox.classList.add('bg-emerald-950/80', 'border-emerald-500/50', 'text-emerald-300');
+                alertBox.innerHTML = `<i class="fa-solid fa-circle-check mt-0.5 shrink-0"></i><span>${message}</span>`;
+            }
+        }
+
+        function hideModalAuthAlert() {
+            const alertBox = document.getElementById('modalAuthAlert');
+            if (alertBox) alertBox.classList.add('hidden');
+        }
+
+        function openAuthModal(mode = 'login') {
+            document.getElementById('authModal').classList.remove('hidden');
+            switchModalAuthTab(mode);
+        }
+
+        function closeAuthModal() {
+            document.getElementById('authModal').classList.add('hidden');
+            hideModalAuthAlert();
+        }
+
+        function switchModalAuthTab(mode) {
+            hideModalAuthAlert();
+            const isLogin = mode === 'login';
+            document.getElementById('modalAuthTitle').innerText = isLogin ? 'Iniciar Sesión' : 'Crear Cuenta';
+            document.getElementById('modalLoginForm').classList.toggle('hidden', !isLogin);
+            document.getElementById('modalRegisterForm').classList.toggle('hidden', isLogin);
+
+            document.getElementById('modalTabLogin').className = isLogin
+                ? 'w-1/2 py-2.5 font-bold text-cyan-400 border-b-2 border-cyan-400 transition-all'
+                : 'w-1/2 py-2.5 font-bold text-slate-400 transition-all';
+            document.getElementById('modalTabRegister').className = !isLogin
+                ? 'w-1/2 py-2.5 font-bold text-purple-400 border-b-2 border-purple-400 transition-all'
+                : 'w-1/2 py-2.5 font-bold text-slate-400 transition-all';
+        }
+
+        function renderNavAuthState(userName) {
+            const navArea = document.getElementById('navAuthArea');
+            if (!navArea) return;
+
+            if (userName) {
+                navArea.innerHTML = `
+                    <div class="flex items-center gap-2.5 px-3.5 py-1.5 rounded-xl bg-slate-900 border border-cyan-500/40 font-orbitron text-xs">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                        <span class="text-white font-bold max-w-[120px] truncate">${userName}</span>
+                        <button onclick="logoutBackendSession()" title="Cerrar sesión" class="text-rose-400 hover:text-rose-300 ml-1">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </button>
+                    </div>
+                `;
+            } else {
+                navArea.innerHTML = `
+                    <button onclick="openAuthModal('login')" class="px-4 py-2 rounded-xl border border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 font-orbitron font-bold text-xs uppercase transition-all">
+                        Iniciar Sesión
+                    </button>
+                    <button onclick="openAuthModal('register')" class="px-4 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-400 text-black font-orbitron font-bold text-xs uppercase shadow-lg hover:opacity-90 transition-all">
+                        Registrarse
+                    </button>
+                `;
+            }
+        }
+
+        async function submitModalLogin(e) {
+            e.preventDefault();
+            hideModalAuthAlert();
+            const email = document.getElementById('modalLoginEmail').value.trim().toLowerCase();
+            const password = document.getElementById('modalLoginPassword').value;
+            const btn = document.getElementById('btnSubmitModalLogin');
+
+            btn.disabled = true;
+            btn.innerText = 'Verificando...';
+
+            try {
+                const res = await fetch(`${API_URL}/login`, {
+                    method: 'POST',
+                    credentials: 'include',
+                    headers: authHeaders,
+                    body: JSON.stringify({ email, password })
+                });
+                const data = await res.json();
+
+                if (!res.ok || !data.success) {
+                    showModalAuthAlert(data.message || 'Correo o contraseña incorrectos.', true);
+                    return;
+                }
+
+                renderNavAuthState(data.nombre);
+                showModalAuthAlert(`¡Bienvenido, ${data.nombre}! Sesión iniciada.`, false);
+                setTimeout(() => closeAuthModal(), 900);
+            } catch (err) {
+                console.error(err);
+                showModalAuthAlert('No se pudo conectar con el servidor. Verifica Node y MySQL.', true);
+            } finally {
+                btn.disabled = false;
+                btn.innerText = 'Entrar a mi Cuenta';
+            }
+        }
+
+        async function submitModalRegister(e) {
+            e.preventDefault();
+            hideModalAuthAlert();
+            const nombre = document.getElementById('modalRegName').value.trim();
+            const email = document.getElementById('modalRegEmail').value.trim().toLowerCase();
+            const password = document.getElementById('modalRegPassword').value;
+            const confirm = document.getElementById('modalRegConfirm').value;
+            const btn = document.getElementById('btnSubmitModalRegister');
+
+            if (password !== confirm) {
+                showModalAuthAlert('Las contraseñas no coinciden. Revísalas e inténtalo de nuevo.', true);
+                return;
+            }
+
+            btn.disabled = true;
+            btn.innerText = 'Registrando...';
+
+            try {
+                const res = await fetch(`${API_URL}/register`, {
+                    method: 'POST',
+                    credentials: 'include',
+                    headers: authHeaders,
+                    body: JSON.stringify({ nombre, email, password })
+                });
+                const data = await res.json();
+
+                if (!res.ok || !data.success) {
+                    showModalAuthAlert(data.message || 'No se pudo crear la cuenta.', true);
+                    return;
+                }
+
+                renderNavAuthState(data.nombre);
+                showModalAuthAlert('¡Cuenta creada con éxito!', false);
+                setTimeout(() => closeAuthModal(), 1000);
+            } catch (err) {
+                console.error(err);
+                showModalAuthAlert('Error al comunicarse con el servidor.', true);
+            } finally {
+                btn.disabled = false;
+                btn.innerText = 'Crear Cuenta';
+            }
+        }
+
+        async function logoutBackendSession() {
+            try {
+                await fetch(`${API_URL}/logout`, {
+                    method: 'POST',
+                    credentials: 'include',
+                    headers: { 'ngrok-skip-browser-warning': 'true' }
+                });
+            } catch (err) {
+                console.error(err);
+            }
+            renderNavAuthState(null);
+        }
+
+        async function checkBackendSession() {
+            try {
+                const res = await fetch(`${API_URL}/session`, {
+                    credentials: 'include',
+                    headers: { 'ngrok-skip-browser-warning': 'true' }
+                });
+                const data = await res.json();
+                if (data.loggedin && data.nombre) {
+                    renderNavAuthState(data.nombre);
+                }
+            } catch (err) {
+                // Mantiene estado inicial si no hay backend activo
+            }
+        }
+
+        // Configurador "Crea tu Evento" con 20% de descuento primera vez
+        function updateEventEstimate() {
+            const chairs = parseInt(document.getElementById('evChairs').value, 10) || 0;
+            const tables = parseInt(document.getElementById('evTables').value, 10) || 0;
+            const isFirstTime = document.getElementById('evFirstTime').checked;
+            const comboSelect = document.getElementById('evCombo');
+            const selectedOption = comboSelect.options[comboSelect.selectedIndex];
+            const comboPrice = parseInt(selectedOption.getAttribute('data-price'), 10) || 0;
+
+            const checkedGames = Array.from(document.querySelectorAll('input[name="evGames"]:checked')).map(el => el.value);
+
+            document.getElementById('sumChairs').innerText = `${chairs} ${chairs === 1 ? 'silla' : 'sillas'}`;
+            document.getElementById('sumTables').innerText = `${tables} ${tables === 1 ? 'mesa' : 'mesas'}`;
+            document.getElementById('sumCombo').innerText = comboSelect.value;
+            document.getElementById('sumGames').innerText = checkedGames.length > 0 ? checkedGames.join(', ') : 'Ninguno seleccionado aún';
+
+            const subtotal = (chairs * 20) + (tables * 50) + comboPrice;
+            const discountAmount = isFirstTime ? Math.round(subtotal * 0.20) : 0;
+            const totalEstimate = subtotal - discountAmount;
+
+            document.getElementById('sumSubtotal').innerText = `$${subtotal.toLocaleString('es-MX')} MXN`;
+            document.getElementById('sumDiscount').innerText = `-$${discountAmount.toLocaleString('es-MX')} MXN`;
+            document.getElementById('discountRow').style.display = isFirstTime ? 'flex' : 'none';
+            document.getElementById('sumEstimate').innerText = `$${totalEstimate.toLocaleString('es-MX')} MXN`;
+        }
+
+        function submitCustomEvent(e) {
+            e.preventDefault();
+            const organizer = document.getElementById('evOrganizer').value.trim();
+            const evType = document.getElementById('evType').value;
+            const evDate = document.getElementById('evDate').value;
+            const chairs = document.getElementById('evChairs').value;
+            const tables = document.getElementById('evTables').value;
+            const combo = document.getElementById('evCombo').value;
+            const firstTimeText = document.getElementById('evFirstTime').checked ? ' (incluye 20% desc. primera vez)' : '';
+
+            const msgBox = document.getElementById('eventSuccessMsg');
+            msgBox.classList.remove('hidden');
+            msgBox.innerHTML = `¡Listo, <strong>${organizer}</strong>! Tu <strong>${evType}</strong> para el <strong>${evDate}</strong> (${chairs} sillas, ${tables} mesas, ${combo})${firstTimeText} quedó registrado.`;
+        }
+
+        function renderSvgFallback(imgElement, gameTitle, themeColor) {
+            imgElement.onerror = null;
+            imgElement.parentElement.innerHTML = `
+                <div class="w-full h-full fallback-card-svg flex flex-col items-center justify-center p-3 text-center border-b border-cyan-500/20 relative overflow-hidden">
+                    <i class="fa-solid fa-gamepad text-3xl mb-2" style="color:${themeColor}"></i>
+                    <span class="font-orbitron font-black text-xs uppercase text-white">${gameTitle}</span>
+                </div>
+            `;
+        }
+
+        function handleImgError(img) {
+            img.onerror = null;
+            img.src = 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&auto=format&fit=crop&q=80';
+        }
+
+        function filterMenu(cat) {
+            document.querySelectorAll('.menu-filter-btn').forEach(b => b.className = (b.getAttribute('data-menu') === cat) ? 'menu-filter-btn px-5 py-2.5 rounded-xl bg-pink-600 text-white font-bold transition-all shadow-md' : 'menu-filter-btn px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all');
+            document.querySelectorAll('.food-item').forEach(i => i.style.display = (cat === 'all' || i.getAttribute('data-mcat') === cat) ? 'flex' : 'none');
+        }
+
+        // Aim Trainer Minigame
+        const aimModal = document.getElementById('aimModal');
+        const aimCanvas = document.getElementById('aimCanvas');
+        const ctx = aimCanvas.getContext('2d');
+        const aimStartOverlay = document.getElementById('aimStartOverlay');
+        let target = { x: 0, y: 0, radius: 22 }, score = 0, clicks = 0, hits = 0, timeLeft = 15, gameInterval = null, isGameRunning = false;
+
+        function openAimTrainer(gameName) {
+            document.getElementById('modalGameTitle').innerText = 'DESAFÍO AIM: ' + gameName.toUpperCase();
+            aimModal.classList.remove('hidden');
+            resetAimGame();
+            setTimeout(() => { aimCanvas.width = aimCanvas.getBoundingClientRect().width; aimCanvas.height = aimCanvas.getBoundingClientRect().height; }, 50);
+        }
+
+        function closeAimTrainer() { aimModal.classList.add('hidden'); clearInterval(gameInterval); isGameRunning = false; }
+        function resetAimGame() { clearInterval(gameInterval); score = 0; clicks = 0; hits = 0; timeLeft = 15; isGameRunning = false; document.getElementById('aimScore').innerText = '0'; document.getElementById('aimTimer').innerText = '15s'; document.getElementById('aimAccuracy').innerText = '100%'; aimStartOverlay.classList.remove('hidden'); ctx.clearRect(0, 0, aimCanvas.width, aimCanvas.height); }
+        function spawnTarget() { target.x = 35 + Math.random() * (aimCanvas.width - 70); target.y = 35 + Math.random() * (aimCanvas.height - 70); }
+        function drawTarget() { ctx.clearRect(0, 0, aimCanvas.width, aimCanvas.height); if (!isGameRunning) return; ctx.beginPath(); ctx.arc(target.x, target.y, target.radius, 0, Math.PI * 2); ctx.fillStyle = '#00f0ff'; ctx.fill(); ctx.beginPath(); ctx.arc(target.x, target.y, target.radius * 0.5, 0, Math.PI * 2); ctx.fillStyle = '#0a0a12'; ctx.fill(); ctx.beginPath(); ctx.arc(target.x, target.y, target.radius * 0.2, 0, Math.PI * 2); ctx.fillStyle = '#ff007f'; ctx.fill(); }
+        function startAimGame() { resetAimGame(); isGameRunning = true; aimStartOverlay.classList.add('hidden'); spawnTarget(); drawTarget(); gameInterval = setInterval(() => { timeLeft--; document.getElementById('aimTimer').innerText = timeLeft + 's'; if (timeLeft <= 0) { clearInterval(gameInterval); isGameRunning = false; aimStartOverlay.classList.remove('hidden'); } }, 1000); }
+
+        aimCanvas.addEventListener('mousedown', (e) => {
+            if (!isGameRunning) return;
+            const rect = aimCanvas.getBoundingClientRect();
+            clicks++;
+            if (Math.hypot(e.clientX - rect.left - target.x, e.clientY - rect.top - target.y) <= target.radius + 5) {
+                hits++; score += 100;
+                document.getElementById('aimScore').innerText = score;
+                spawnTarget(); drawTarget();
+            }
+            document.getElementById('aimAccuracy').innerText = (Math.round((hits / clicks) * 100) || 0) + '%';
+        });
+
+        window.onload = function() {
+            saveFavorites();
+            renderGamesCatalog();
+            renderRankingList();
+            renderNewsSection();
+            checkBackendSession();
+            updateEventEstimate();
+        };
+    </script>
+</body>
+</html>
