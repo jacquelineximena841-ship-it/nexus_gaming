@@ -3,18 +3,52 @@ const mysql = require('mysql2');
 const bcrypt = require('bcryptjs');
 const session = require('express-session');
 const path = require('path');
-
 const app = express();
 
-// Configuraciones básicas
+// Necesario cuando el servidor está detrás de un proxy como ngrok
+app.set('trust proxy', 1);
+
+// Middleware de CORS para permitir peticiones desde GitHub Pages, ngrok y localhost
+app.use((req, res, next) => {
+    const allowedOrigins = [
+        'http://yupifest.ayadl.com.mx',
+        'https://yupifest.ayadl.com.mx',
+        'https://ladaosotomtz-max.github.io',
+        'http://localhost:3000',
+        'https://unhelpful-drainable-glowworm.ngrok-free.dev'
+    ];
+
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        res.setHeader('Access-Control-Allow-Origin', origin);
+    }
+
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, ngrok-skip-browser-warning');
+    res.setHeader('Access-Control-Allow-Credentials', 'true');
+
+    if (req.method === 'OPTIONS') {
+        return res.sendStatus(200);
+    }
+
+    next();
+});
+
+// Middlewares para leer datos de formularios, JSON y archivos estáticos de /public
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Configuración de sesión (usa sameSite: 'lax' y secure: false para probar en http://localhost:3000)
+const isHttps = process.env.COOKIE_SECURE === 'true';
 app.use(session({
-    secret: 'nexus_secreto_super_seguro',
+    secret: 'yupifests_secreto_super_seguro',
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: false,
+    cookie: {
+        sameSite: isHttps ? 'none' : 'lax',
+        secure: isHttps
+    }
 }));
 
 // Conexión a la base de datos en XAMPP
@@ -27,44 +61,65 @@ const db = mysql.createConnection({
 
 db.connect((err) => {
     if (err) {
-        console.error('Error conectando a MySQL:', err);
+        console.error('❌ Error conectando a MySQL:', err);
         return;
     }
     console.log('✅ Conectado a la base de datos sistema_login en XAMPP');
 });
 
+// --- VERIFICAR SESIÓN ACTIVA ---
+app.get('/session', (req, res) => {
+    if (req.session.loggedin) {
+        res.json({ loggedin: true, nombre: req.session.nombre });
+    } else {
+        res.json({ loggedin: false });
+    }
+});
+
 // --- RUTA DE REGISTRO ---
 app.post('/register', async (req, res) => {
-    const { nombre, correo, password } = req.body;
+    const { nombre, email, password } = req.body;
+
+    if (!nombre || !email || !password) {
+        return res.status(400).json({ success: false, message: 'Completa todos los campos.' });
+    }
 
     try {
         const hashedPassword = await bcrypt.hash(password, 10);
-        const query = 'INSERT INTO usuarios (nombre, correo, password) VALUES (?, ?, ?)';
+        const query = 'INSERT INTO usuarios (nombre, email, password) VALUES (?, ?, ?)';
 
-        db.query(query, [nombre, correo, hashedPassword], (err, result) => {
+        db.query(query, [nombre, email, hashedPassword], (err, result) => {
             if (err) {
                 console.error(err);
-                return res.send('Error al registrar el usuario. <a href="/register.html">Intentar de nuevo</a>');
+                return res.status(400).json({ success: false, message: 'Error al registrar (quizá el correo ya está registrado).' });
             }
-            // Te manda directo a iniciar sesión
-            res.redirect('/login.html');
+            req.session.loggedin = true;
+            req.session.nombre = nombre;
+            res.json({ success: true, nombre: nombre });
         });
     } catch (error) {
         console.error(error);
-        res.status(500).send('Error en el servidor');
+        res.status(500).json({ success: false, message: 'Error en el servidor.' });
     }
 });
 
 // --- RUTA DE INICIO DE SESIÓN ---
 app.post('/login', (req, res) => {
-    const { correo, password } = req.body;
+    const { email, password } = req.body;
 
-    const query = 'SELECT * FROM usuarios WHERE correo = ?';
-    db.query(query, [correo], async (err, results) => {
-        if (err) throw err;
+    if (!email || !password) {
+        return res.status(400).json({ success: false, message: 'Ingresa tu correo y contraseña.' });
+    }
+
+    const query = 'SELECT * FROM usuarios WHERE email = ?';
+    db.query(query, [email], async (err, results) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).json({ success: false, message: 'Error en la base de datos.' });
+        }
 
         if (results.length === 0) {
-            return res.send('Usuario no encontrado. <a href="/login.html">Inténtalo de nuevo</a>');
+            return res.status(401).json({ success: false, message: 'Usuario no encontrado.' });
         }
 
         const usuario = results[0];
@@ -73,22 +128,21 @@ app.post('/login', (req, res) => {
         if (passwordMatch) {
             req.session.loggedin = true;
             req.session.nombre = usuario.nombre;
-            // Te manda directo a tu página principal de Nexus Gaming Lounge
-            res.redirect('/');
+            res.json({ success: true, nombre: usuario.nombre });
         } else {
-            res.send('Contraseña incorrecta. <a href="/login.html">Volver</a>');
+            res.status(401).json({ success: false, message: 'Contraseña incorrecta.' });
         }
     });
 });
 
 // --- RUTA PARA CERRAR SESIÓN ---
-app.get('/logout', (req, res) => {
+app.post('/logout', (req, res) => {
     req.session.destroy(() => {
-        res.redirect('/login.html');
+        res.json({ success: true });
     });
 });
 
-// Iniciar servidor
+// Iniciar servidor en puerto 3000
 app.listen(3000, () => {
-    console.log('🚀 Servidor corriendo en http://localhost:3000');
+    console.log("🚀 Servidor corriendo en http://localhost:3000");
 });
